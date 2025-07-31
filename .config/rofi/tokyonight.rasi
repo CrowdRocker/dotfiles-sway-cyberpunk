@@ -1,0 +1,44 @@
+window {
+    width: 50%;
+    border-radius: 12px;
+    border: 2px solid #7aa2f7;
+    background-color: #1a1b26ee;
+}
+
+mainbox {
+    children: [listview];
+}
+
+listview {
+    background-color: transparent;
+    dynamic: true;
+    fixed-height: false;
+}
+
+element {
+    background-color: #1a1b26;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    text-color: #c0caf5;
+}
+
+element:hover {
+    background-color: #7aa2f7;
+    text-color: #1a1b26;
+    font-weight: bold;
+}
+
+prompt {
+    background-color: #7aa2f7;
+    text-color: #1a1b26;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+entry {
+    background-color: #292e3d;
+    text-color: #c0caf5;
+    padding: 8px;
+}

@@ -1,0 +1,41 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 4,
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-center": ["custom/game-launcher", "clock"],
+  "modules-right": [
+    "cpu", "memory", "temperature", "disk", "network",
+    "bluetooth", "wireplumber", "idle_inhibitor", "custom/gamemode",
+    "custom/updates", "tray", "custom/power"
+  ],
+  "style": "include/style.css",
+  "log-level": "ERROR",
+  "cpu": { "format": "💻 {usage}%"},
+  "memory": { "format": "🧠 {used}/{total}"},
+  "clock": {
+    "format": "🕒 {:%H:%M}  📅 {:%a %d}",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+  "custom/game-launcher": {
+    "format": "🎮",
+    "on-click": "eww open gamelauncher"
+  },
+  "custom/gamemode": {
+    "exec": "gamemode-query",
+    "format": "⚡",
+    "format-true": "🚀",
+    "on-click": "gamemoderun true && notify-send '🎮 Gamemode ON'",
+    "on-click-right": "systemctl --user stop gamemoded && notify-send '🎮 Gamemode OFF'"
+  },
+  "custom/updates": {
+    "exec": "checkupdates | wc -l",
+    "format": "📦 {}",
+    "on-click": "alacritty -e sudo pacman -Syu"
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "~/.local/bin/power-menu.sh"
+  }
+}

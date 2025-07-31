@@ -1,0 +1,12 @@
+<eww>
+    <window name="gamelauncher" monitor="0" width="800" height="600" x="center" y="center" layer="top">
+        <box class="launcher-grid">
+            <button onclick="launch('steam')">🎮 Steam</button>
+            <button onclick="launch('lutris')">📦 Lutris</button>
+            <button onclick="launch('heroic')">🛡️ Heroic</button>
+            <button onclick="launch('spotify')">🎵 Spotify</button>
+            <button onclick="launch('discord')">💬 Discord</button>
+            <button onclick="launch('alacritty')">💻 Terminal</button>
+        </box>
+    </window>
+</eww>

@@ -1,0 +1,36 @@
+add_newline = false
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+[time]
+disabled = false
+format = "🕙 [$time](#7aa2f7)"
+
+Terminal: Alacritty + TokyoNight
+~/.config/alacritty/alacritty.yml:
+
+colors:
+  primary:
+    background: '#1a1b26'
+    foreground: '#c0caf5'
+  cursor:
+    cursor: '#bb9af7'
+  normal:
+    black:   '#15161e'
+    red:     '#f7768e'
+    green:   '#9ece6a'
+    yellow:  '#e0af68'
+    blue:    '#7aa2f7'
+    magenta: '#bb9af7'
+    cyan:    '#73daca'
+    white:   '#a9b1d6'
+
+Font:
+
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Regular
+  size: 12.0

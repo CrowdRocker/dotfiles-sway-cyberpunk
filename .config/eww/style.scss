@@ -1,0 +1,28 @@
+$bg: #1a1b26;
+$text: #c0caf5;
+$accent: #7aa2f7;
+$hover: #bb9af7;
+
+window#gamelauncher {
+    background-color: rgba(26, 27, 38, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(122, 162, 247, 0.3);
+}
+
+button {
+    padding: 16px;
+    margin: 10px;
+    background: lighten($bg, 5%);
+    color: $text;
+    border: 2px solid $accent;
+    border-radius: 10px;
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    transition: all 0.2s;
+
+    &:hover {
+        background: $accent;
+        color: $bg;
+        transform: scale(1.05);
+    }
+}

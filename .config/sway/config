@@ -1,0 +1,31 @@
+# Sway Config - TokyoNight Cyberpunk
+set $mod Mod4
+set $term alacritty
+set $menu nwg-drawer
+
+font pango:JetBrains Mono 10
+output * bg ~/Pictures/Wallpapers/tokyo-night.jpg fill
+
+exec_always -- dwl ~/.config/sway/autostart.sh
+
+bindsym $mod+Return exec $term
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+e exec ~/.local/bin/power-menu.sh
+bindsym $mod+g exec eww open gamelauncher
+
+bindsym XF86AudioRaiseVolume exec --quiet wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec --quiet wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec --quiet wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
+bindsym --release $mod+Shift+s exec grim - | wl-copy
+bindsym $mod+l exec swaylock -f -c 1a1b26
+
+for_window [class=".*"] border none

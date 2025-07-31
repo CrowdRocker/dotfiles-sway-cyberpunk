@@ -1,0 +1,26 @@
+{
+  "width": 400,
+  "height": 600,
+  "margin-top": 50,
+  "margin-bottom": 50,
+  "css-name": "nwg-drawer",
+  "layout": "grid",
+  "columns": 3,
+  "show-welcome": false,
+  "logo-path": "/usr/share/icons/TokyoNight/scalable/apps/archlinux.svg",
+  "terminal": "alacritty",
+  "file-manager": "thunar",
+  "web-browser": "firefox",
+  "power-button": true,
+  "logout-command": "swaymsg exit",
+  "reboot-command": "systemctl reboot",
+  "shutdown-command": "systemctl poweroff",
+  "lock-command": "swaylock -f -c 1a1b26",
+  "hibernate-command": "systemctl hibernate",
+  "apps": [
+    { "name": "Alacritty", "exec": "alacritty", "icon": "terminal" },
+    { "name": "Firefox", "exec": "firefox", "icon": "firefox" },
+    { "name": "Steam", "exec": "steam", "icon": "steam" },
+    { "name": "Spotify", "exec": "spotify", "icon": "spotify" }
+  ]
+}

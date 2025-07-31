@@ -1,0 +1,8 @@
+(defwindow gamelauncher
+  :monitor 0
+  :geometry (geometry :x "center" :y "center" :width 800 :height 600)
+  :layers (layer :top)
+  :window-type normal
+  :class "gamelauncher"
+  :reserve []
+  :content <your-grid-here>)

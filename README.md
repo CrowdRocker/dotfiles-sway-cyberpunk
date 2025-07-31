@@ -1,5 +1,3 @@
-
-
 # 🌆 TokyoNight Cyberpunk Sway Dotfiles
 
 > A sleek, high-performance **Sway (Wayland)** desktop themed in **TokyoNight** with cyberpunk aesthetics, optimized for **AMD gaming (RX 580)** on **Arch Linux**.
@@ -48,27 +46,6 @@
 ---
 
 ## 🚀 Quick Setup
-
----
-
-## 🚀 Final Touch: GitHub Release with ZIP
-
-Once your repo is live:
-
-1. Go to **Releases** → **Draft a new release**
-2. Tag: `v1.0-cyberpunk`
-3. Title: `v1.0 - TokyoNight Cyberpunk Launch`
-4. Description:
-   ```markdown
-   🌆 First release of TokyoNight Cyberpunk Sway dotfiles.
-
-   Includes:
-   - Full config suite (Sway, Waybar, EWW, Rofi, etc.)
-   - Auto-install script
-   - Setup wizard
-   - Screenshots & demo guide
-
-   [Download ZIP](https://github.com/CrowdRocker/dotfiles-sway-cyberpunk/archive/refs/tags/v1.0-cyberpunk.zip)
 
 ## 🧩 Run the Setup Wizard
 
